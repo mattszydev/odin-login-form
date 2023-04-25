@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(./Norse-Bold.otf);
+    font-weight: bold;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside{
+    background-image: url(./halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 35vw;
+    height: 100%;
+    flex: 1;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+form{
+    max-width: 500px;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+label{
+    display: block;
+    margin-bottom: .2rem;
+    font-size: .9rem;
+}
+
+h3{
+    margin-bottom: 1rem;
+}
+
+
+
+.logo-bar{
+    font-family: 'Norse', sans-serif;
+    background-color: rgba(0,0,0, .5);
+    color: white;
+    height: 6rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+    padding: 1rem;
+}
+
+.logo-bar>img{
+    height: 100%;
+}
+
+.logo-bar>h2{
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-left: .5rem;
+}
+
+input{
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    padding: .3rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input:focus{
+    box-shadow: 0px 0px 10px -2px rgba(148,148,148,1);
+    outline-color: lightblue;
+}
+
+#tel_number:valid{
+    outline-color: green;
+}
+
+#tel_number:invalid{
+    outline-color: red;
+}
+
+.password-error{
+    border: 1px solid red;
+}
+
+.no-show{
+    display:none;
+}
+
+.error-message{
+    display: block;
+    color: red;
+    font-size: .8rem;
+}
+
+.password-error-alert:focus{
+    outline-color: red;
+}
+
+.right-column{
+    background-color: rgb(249,250,251);
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container{
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 14px -6px rgba(148,148,148,1);
+    border-top: 1px solid #E5E7EB;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.input-group{
+   min-width: 220px;
+}
+
+.top-bar, .bottom-bar{
+    background-color: transparent;
+    height: 35%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar{
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.top-bar > p {
+    max-width: 50ch;
+    font-weight: 900;
+}
+
+.bottom-bar{
+    padding: 2rem 0 0 50px;
+}
+
+.bottom-bar>p>a{
+    color: rgb(93,108,76);
+    text-decoration: none;
+}
+
+#submit-button{
+    background-color: rgb(93,108,76);
+    padding: .6rem 2rem;
+    color: white;
+    border: .5px solid rgb(93,108,76);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+

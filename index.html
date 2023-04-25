@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <main>
+        <aside>
+            <div class="logo-bar">
+                <img src="odin-logo.png" alt="">
+                <h2>ODIN</h2>
+            </div>
+        </aside>
+        <section class="right-column">
+            <div class="top-bar">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br><br>
+                    You <em>know</em> you want to.
+                </p>
+
+            </div>
+            <div class="form-container">
+                
+                <form action="#" method="post" id="main-form">
+                    <h3>Let's do this!</h3>
+
+                    <div class="row one">
+                        <div class="input-group">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name">
+                        </div>
+                        <div class="input-group">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name">
+                        </div>
+                    </div>
+                    
+                    <div class="row two">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="tel" name="tel_number" id="tel_number" pattern="\d+" placeholder="(_ _ _) 000-0000"required>
+                        </div>
+                    </div>
+                    
+                    <div class="row three">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                            <p id="error" class="no-show">* Passwords do not match</p>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="password" id="confirm_password" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-bar">
+                <button type="submit" form="main-form" id="submit-button">Create Account</button>
+                <p>Already have an account? <a href="#">Login</a></p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const passWord = document.querySelector("#password");
+        const passWordConfirmed = document.querySelector("#confirm_password");
+        const errorMessage = document.querySelector('#error');
+
+        passWordConfirmed.addEventListener('input', () =>{
+            if(passWordConfirmed.value!==''){
+                if(password.value !== passWordConfirmed.value){
+                passWordConfirmed.classList.add('password-error', 'password-error-alert');
+                passWord.classList.add('password-error', 'password-error-alert');
+                errorMessage.classList.add('error-message');
+
+                }
+                else{
+                    passWordConfirmed.classList.remove('password-error', 'password-error-alert');
+                    passWord.classList.remove('password-error', 'password-error-alert');
+                    errorMessage.classList.remove('error-message');
+                }
+            }
+        })
+
+
+
+    </script>
+</body>
+</html>
